@@ -3,11 +3,11 @@ import os
 from unidecode import unidecode
 
 
-DATA_FOLDER = 'mySpotify'
+DATA_FOLDER = 'myTwitter'
 
-ROOT_NODE = '1RnHJ07H3jcpay9PrUPjnt'
+ROOT_NODE = 'marceloga1995'
 
-ROOT_NAME = 'Raça Negra'
+ROOT_NAME = 'marceloga1995'
 
 ROOT_DEPTH = 1
 
@@ -15,7 +15,7 @@ INCLUDE_ROOT = True
 
 DIRECTED = False
 
-GRAPH_NAME = 'mySpotify'
+GRAPH_NAME = 'myTwitter'
 
 
 def load_successors(node, depth=1, names=None):
