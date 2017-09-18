@@ -1,0 +1,5 @@
+\select@language {brazil}
+\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{3}
+\contentsline {section}{\numberline {2}Situa\IeC {\c c}\IeC {\~o}es e Consequ\IeC {\^e}ncias}{3}
+\contentsline {section}{\numberline {3}An\IeC {\'a}lise}{4}
+\contentsline {section}{\numberline {4}Conclus\IeC {\~a}o}{5}
