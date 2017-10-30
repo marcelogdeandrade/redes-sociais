@@ -11,7 +11,7 @@ CLIENT_SERCRET	../encontro03/get-spotify.py	/^CLIENT_SERCRET = None$/;"	kind:var
 CONSUMER_KEY	../encontro03/get-twitter.py	/^CONSUMER_KEY = None$/;"	kind:variable	line:13
 CONSUMER_SECRET	../encontro03/get-twitter.py	/^CONSUMER_SECRET = None$/;"	kind:variable	line:14
 CREDENTIALS_FILE	../encontro03/get-spotify.py	/^CREDENTIALS_FILE = '..\/spotify-keys.txt'$/;"	kind:variable	line:15
-DATA_FOLDER	../encontro03/build-graph.py	/^DATA_FOLDER = 'myTwitter'$/;"	kind:variable	line:6
+DATA_FOLDER	../encontro03/build-graph.py	/^DATA_FOLDER = 'mySpotify'$/;"	kind:variable	line:6
 DATA_FOLDER	../encontro03/get-facebook.py	/^DATA_FOLDER = 'facebook'$/;"	kind:variable	line:20
 DATA_FOLDER	../encontro03/get-github.py	/^DATA_FOLDER = 'github'$/;"	kind:variable	line:8
 DATA_FOLDER	../encontro03/get-goodreads.py	/^DATA_FOLDER = 'goodreads'$/;"	kind:variable	line:23
@@ -23,16 +23,18 @@ DRIVER_PATH	../encontro03/get-facebook.py	/^DRIVER_PATH = r'\/caminho\/para\/o\/
 DRIVER_PATH	../encontro03/get-goodreads.py	/^DRIVER_PATH = r'\/caminho\/para\/o\/executavel\/do\/driver'$/;"	kind:variable	line:11
 DRIVER_PATH	../encontro03/get-linkedin.py	/^DRIVER_PATH = r'\/caminho\/para\/o\/executavel\/do\/driver'$/;"	kind:variable	line:11
 FILE_NAME	../encontro03/get-twitter.py	/^FILE_NAME = '..\/twitter-keys.txt'$/;"	kind:variable	line:11
-GRAPH_NAME	../encontro03/build-graph.py	/^GRAPH_NAME = 'myTwitter'$/;"	kind:variable	line:18
+GRAPH_NAME	../encontro03/build-graph.py	/^GRAPH_NAME = 'mySpotify'$/;"	kind:variable	line:18
 HEAD_ANGLE	../easyplot.py	/^HEAD_ANGLE = 0.5$/;"	kind:variable	line:6
-HEAD_ANGLE	../socnet.py	/^HEAD_ANGLE = 0.5$/;"	kind:variable	line:7
+HEAD_ANGLE	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^HEAD_ANGLE = 0.5$/;"	kind:variable	line:8
+HEAD_ANGLE	../old_socnet.py	/^HEAD_ANGLE = 0.5$/;"	kind:variable	line:8
+HEAD_ANGLE	../socnet.py	/^HEAD_ANGLE = 0.5$/;"	kind:variable	line:8
 INCLUDE_ROOT	../encontro03/build-graph.py	/^INCLUDE_ROOT = True$/;"	kind:variable	line:14
 PAGE_LIMIT	../encontro03/get-goodreads.py	/^PAGE_LIMIT = 10$/;"	kind:variable	line:21
 ROOT_DEPTH	../encontro03/build-graph.py	/^ROOT_DEPTH = 1$/;"	kind:variable	line:12
 ROOT_DEPTH	../encontro03/get-spotify.py	/^ROOT_DEPTH = 2$/;"	kind:variable	line:11
-ROOT_NAME	../encontro03/build-graph.py	/^ROOT_NAME = 'marceloga1995'$/;"	kind:variable	line:10
+ROOT_NAME	../encontro03/build-graph.py	/^ROOT_NAME = 'Raca Negra'$/;"	kind:variable	line:10
 ROOT_NAME	../encontro03/get-spotify.py	/^ROOT_NAME = 'Raca Negra'$/;"	kind:variable	line:9
-ROOT_NODE	../encontro03/build-graph.py	/^ROOT_NODE = 'marceloga1995'$/;"	kind:variable	line:8
+ROOT_NODE	../encontro03/build-graph.py	/^ROOT_NODE = '1RnHJ07H3jcpay9PrUPjnt'$/;"	kind:variable	line:8
 ROOT_NODE	../encontro03/get-facebook.py	/^ROOT_NODE = 'SEU ID'$/;"	kind:variable	line:18
 ROOT_NODE	../encontro03/get-github.py	/^ROOT_NODE = 'tj'$/;"	kind:variable	line:6
 ROOT_NODE	../encontro03/get-goodreads.py	/^ROOT_NODE = '656983'$/;"	kind:variable	line:19
@@ -48,38 +50,80 @@ WINDOW_HEIGHT	../encontro03/get-linkedin.py	/^WINDOW_HEIGHT = 768$/;"	kind:varia
 WINDOW_WIDTH	../encontro03/get-facebook.py	/^WINDOW_WIDTH = 1024$/;"	kind:variable	line:12
 WINDOW_WIDTH	../encontro03/get-goodreads.py	/^WINDOW_WIDTH = 1024$/;"	kind:variable	line:13
 WINDOW_WIDTH	../encontro03/get-linkedin.py	/^WINDOW_WIDTH = 1024$/;"	kind:variable	line:13
-_add_edge	../socnet.py	/^def _add_edge(g, e, edge_trace, label_trace):$/;"	kind:function	line:164
-_add_node	../socnet.py	/^def _add_node(g, n, node_trace):$/;"	kind:function	line:157
+_add_edge	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def _add_edge(g, e, edge_trace, label_trace):$/;"	kind:function	line:172
+_add_edge	../old_socnet.py	/^def _add_edge(g, e, edge_trace, label_trace):$/;"	kind:function	line:172
+_add_edge	../socnet.py	/^def _add_edge(g, e, edge_trace, label_trace):$/;"	kind:function	line:172
+_add_node	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def _add_node(g, n, node_trace):$/;"	kind:function	line:165
+_add_node	../old_socnet.py	/^def _add_node(g, n, node_trace):$/;"	kind:function	line:165
+_add_node	../socnet.py	/^def _add_node(g, n, node_trace):$/;"	kind:function	line:165
 _add_point	../easyplot.py	/^def _add_point(x, y, point_trace):$/;"	kind:function	line:98
 _add_vector	../easyplot.py	/^def _add_vector(x1, y1, vector_trace):$/;"	kind:function	line:103
-_build_edge_trace	../socnet.py	/^def _build_edge_trace(color):$/;"	kind:function	line:106
-_build_label_trace	../socnet.py	/^def _build_label_trace():$/;"	kind:function	line:119
+_build_edge_trace	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def _build_edge_trace(color):$/;"	kind:function	line:114
+_build_edge_trace	../old_socnet.py	/^def _build_edge_trace(color):$/;"	kind:function	line:114
+_build_edge_trace	../socnet.py	/^def _build_edge_trace(color):$/;"	kind:function	line:114
+_build_label_trace	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def _build_label_trace():$/;"	kind:function	line:127
+_build_label_trace	../old_socnet.py	/^def _build_label_trace():$/;"	kind:function	line:127
+_build_label_trace	../socnet.py	/^def _build_label_trace():$/;"	kind:function	line:127
 _build_layout	../easyplot.py	/^def _build_layout(width, height, xrange, yrange):$/;"	kind:function	line:70
-_build_layout	../socnet.py	/^def _build_layout(width, height):$/;"	kind:function	line:133
-_build_node_trace	../socnet.py	/^def _build_node_trace(color):$/;"	kind:function	line:71
+_build_layout	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def _build_layout(width, height):$/;"	kind:function	line:141
+_build_layout	../old_socnet.py	/^def _build_layout(width, height):$/;"	kind:function	line:141
+_build_layout	../socnet.py	/^def _build_layout(width, height):$/;"	kind:function	line:141
+_build_node_trace	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def _build_node_trace(color):$/;"	kind:function	line:79
+_build_node_trace	../old_socnet.py	/^def _build_node_trace(color):$/;"	kind:function	line:79
+_build_node_trace	../socnet.py	/^def _build_node_trace(color):$/;"	kind:function	line:79
 _build_point_trace	../easyplot.py	/^def _build_point_trace(color):$/;"	kind:function	line:44
 _build_vector_trace	../easyplot.py	/^def _build_vector_trace(color):$/;"	kind:function	line:57
 _convert	../easyplot.py	/^def _convert(color):$/;"	kind:function	line:40
-_convert	../socnet.py	/^def _convert(color):$/;"	kind:function	line:67
+_convert	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def _convert(color):$/;"	kind:function	line:75
+_convert	../old_socnet.py	/^def _convert(color):$/;"	kind:function	line:75
+_convert	../socnet.py	/^def _convert(color):$/;"	kind:function	line:75
 _frame	../easyplot.py	/^def _frame(pairs, colors, build_function, add_function):$/;"	kind:function	line:140
-_normalize_positions	../socnet.py	/^def _normalize_positions(g):$/;"	kind:function	line:23
+_normalize_positions	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def _normalize_positions(g):$/;"	kind:function	line:24
+_normalize_positions	../old_socnet.py	/^def _normalize_positions(g):$/;"	kind:function	line:24
+_normalize_positions	../socnet.py	/^def _normalize_positions(g):$/;"	kind:function	line:24
 _rotate	../easyplot.py	/^def _rotate(dx, dy, width, height, counter):$/;"	kind:function	line:25
-_rotate	../socnet.py	/^def _rotate(dx, dy, width, height, counter):$/;"	kind:function	line:52
+_rotate	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def _rotate(dx, dy, width, height, counter):$/;"	kind:function	line:60
+_rotate	../old_socnet.py	/^def _rotate(dx, dy, width, height, counter):$/;"	kind:function	line:60
+_rotate	../socnet.py	/^def _rotate(dx, dy, width, height, counter):$/;"	kind:function	line:60
 _scale	../easyplot.py	/^def _scale(dx, dy, width, height, size):$/;"	kind:function	line:16
-_scale	../socnet.py	/^def _scale(dx, dy, width, height, size):$/;"	kind:function	line:43
+_scale	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def _scale(dx, dy, width, height, size):$/;"	kind:function	line:51
+_scale	../old_socnet.py	/^def _scale(dx, dy, width, height, size):$/;"	kind:function	line:51
+_scale	../socnet.py	/^def _scale(dx, dy, width, height, size):$/;"	kind:function	line:51
+_set_layout	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def _set_layout(g, layout):$/;"	kind:function	line:44
+_set_layout	../old_socnet.py	/^def _set_layout(g, layout):$/;"	kind:function	line:44
+_set_layout	../socnet.py	/^def _set_layout(g, layout):$/;"	kind:function	line:44
 build-graph.py	../encontro03/build-graph.py	1;"	kind:file	line:1
-build_betweenness	../socnet.py	/^def build_betweenness(g):$/;"	kind:function	line:379
-build_matrix	../socnet.py	/^def build_matrix(g):$/;"	kind:function	line:375
+build_betweenness	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def build_betweenness(g):$/;"	kind:function	line:384
+build_betweenness	../old_socnet.py	/^def build_betweenness(g):$/;"	kind:function	line:384
+build_betweenness	../socnet.py	/^def build_betweenness(g):$/;"	kind:function	line:384
+build_matrix	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def build_matrix(g):$/;"	kind:function	line:380
+build_matrix	../old_socnet.py	/^def build_matrix(g):$/;"	kind:function	line:380
+build_matrix	../socnet.py	/^def build_matrix(g):$/;"	kind:function	line:380
 build_path	../encontro03/get-goodreads.py	/^def build_path(node):$/;"	kind:function	line:66
 build_path	../encontro03/get-twitter.py	/^def build_path(node):$/;"	kind:function	line:27
-build_shortest_paths	../socnet.py	/^def build_shortest_paths(g, s, t):$/;"	kind:function	line:386
+build_shortest_paths	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def build_shortest_paths(g, s, t):$/;"	kind:function	line:391
+build_shortest_paths	../old_socnet.py	/^def build_shortest_paths(g, s, t):$/;"	kind:function	line:391
+build_shortest_paths	../socnet.py	/^def build_shortest_paths(g, s, t):$/;"	kind:function	line:391
 easyplot.py	../easyplot.py	1;"	kind:file	line:1
-edge_color	../socnet.py	/^edge_color = (0, 0, 0)$/;"	kind:variable	line:17
-edge_label_distance	../socnet.py	/^edge_label_distance = 10$/;"	kind:variable	line:20
-edge_width	../socnet.py	/^edge_width = 2$/;"	kind:variable	line:16
+edge_color	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^edge_color = (0, 0, 0)$/;"	kind:variable	line:18
+edge_color	../old_socnet.py	/^edge_color = (0, 0, 0)$/;"	kind:variable	line:18
+edge_color	../socnet.py	/^edge_color = (0, 0, 0)$/;"	kind:variable	line:18
+edge_label_distance	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^edge_label_distance = 10$/;"	kind:variable	line:21
+edge_label_distance	../old_socnet.py	/^edge_label_distance = 10$/;"	kind:variable	line:21
+edge_label_distance	../socnet.py	/^edge_label_distance = 10$/;"	kind:variable	line:21
+edge_width	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^edge_width = 2$/;"	kind:variable	line:17
+edge_width	../old_socnet.py	/^edge_width = 2$/;"	kind:variable	line:17
+edge_width	../socnet.py	/^edge_width = 2$/;"	kind:variable	line:17
 frame_points	../easyplot.py	/^def frame_points(pairs, colors):$/;"	kind:function	line:153
 frame_vectors	../easyplot.py	/^def frame_vectors(pairs, colors):$/;"	kind:function	line:157
-generate_frame	../socnet.py	/^def generate_frame(g, nlab=False, elab=False):$/;"	kind:function	line:291
+generate_complete_graph	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def generate_complete_graph(number_of_nodes):$/;"	kind:function	line:411
+generate_complete_graph	../old_socnet.py	/^def generate_complete_graph(number_of_nodes):$/;"	kind:function	line:411
+generate_complete_graph	../socnet.py	/^def generate_complete_graph(number_of_nodes):$/;"	kind:function	line:411
+generate_empty_graph	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def generate_empty_graph(number_of_nodes):$/;"	kind:function	line:422
+generate_empty_graph	../socnet.py	/^def generate_empty_graph(number_of_nodes):$/;"	kind:function	line:422
+generate_frame	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def generate_frame(g, nlab=False, elab=False):$/;"	kind:function	line:296
+generate_frame	../old_socnet.py	/^def generate_frame(g, nlab=False, elab=False):$/;"	kind:function	line:296
+generate_frame	../socnet.py	/^def generate_frame(g, nlab=False, elab=False):$/;"	kind:function	line:296
 get-facebook.py	../encontro03/get-facebook.py	1;"	kind:file	line:1
 get-github.py	../encontro03/get-github.py	1;"	kind:file	line:1
 get-goodreads.py	../encontro03/get-goodreads.py	1;"	kind:file	line:1
@@ -90,10 +134,16 @@ getCredentials	../encontro03/get-spotify.py	/^def getCredentials():$/;"	kind:fun
 getCredentials	../encontro03/get-twitter.py	/^def getCredentials():$/;"	kind:function	line:18
 get_successors	../encontro03/get-spotify.py	/^def get_successors(api, node, depth=1, names=None):$/;"	kind:function	line:26
 graph_height	../easyplot.py	/^graph_height = 272$/;"	kind:variable	line:10
-graph_height	../socnet.py	/^graph_height = 450$/;"	kind:variable	line:11
+graph_height	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^graph_height = 450$/;"	kind:variable	line:12
+graph_height	../old_socnet.py	/^graph_height = 450$/;"	kind:variable	line:12
+graph_height	../socnet.py	/^graph_height = 450$/;"	kind:variable	line:12
 graph_width	../easyplot.py	/^graph_width = 272$/;"	kind:variable	line:9
-graph_width	../socnet.py	/^graph_width = 800$/;"	kind:variable	line:10
-load_graph	../socnet.py	/^def load_graph(path, has_pos=False):$/;"	kind:function	line:236
+graph_width	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^graph_width = 800$/;"	kind:variable	line:11
+graph_width	../old_socnet.py	/^graph_width = 800$/;"	kind:variable	line:11
+graph_width	../socnet.py	/^graph_width = 800$/;"	kind:variable	line:11
+load_graph	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def load_graph(path, has_pos=False):$/;"	kind:function	line:241
+load_graph	../old_socnet.py	/^def load_graph(path, has_pos=False):$/;"	kind:function	line:241
+load_graph	../socnet.py	/^def load_graph(path, has_pos=False):$/;"	kind:function	line:241
 load_successors	../encontro03/build-graph.py	/^def load_successors(node, depth=1, names=None):$/;"	kind:function	line:21
 main	../encontro03/build-graph.py	/^def main():$/;"	kind:function	line:50
 main	../encontro03/get-facebook.py	/^def main():$/;"	kind:function	line:66
@@ -102,13 +152,29 @@ main	../encontro03/get-goodreads.py	/^def main():$/;"	kind:function	line:70
 main	../encontro03/get-linkedin.py	/^def main():$/;"	kind:function	line:64
 main	../encontro03/get-spotify.py	/^def main():$/;"	kind:function	line:61
 main	../encontro03/get-twitter.py	/^def main():$/;"	kind:function	line:31
-node_color	../socnet.py	/^node_color = (255, 255, 255)$/;"	kind:variable	line:14
-node_label_position	../socnet.py	/^node_label_position = 'middle center'$/;"	kind:variable	line:19
-node_size	../socnet.py	/^node_size = 20$/;"	kind:variable	line:13
+node_color	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^node_color = (255, 255, 255)$/;"	kind:variable	line:15
+node_color	../old_socnet.py	/^node_color = (255, 255, 255)$/;"	kind:variable	line:15
+node_color	../socnet.py	/^node_color = (255, 255, 255)$/;"	kind:variable	line:15
+node_label_position	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^node_label_position = 'middle center'$/;"	kind:variable	line:20
+node_label_position	../old_socnet.py	/^node_label_position = 'middle center'$/;"	kind:variable	line:20
+node_label_position	../socnet.py	/^node_label_position = 'middle center'$/;"	kind:variable	line:20
+node_size	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^node_size = 20$/;"	kind:variable	line:14
+node_size	../old_socnet.py	/^node_size = 20$/;"	kind:variable	line:14
+node_size	../socnet.py	/^node_size = 20$/;"	kind:variable	line:14
+old_socnet.py	../old_socnet.py	1;"	kind:file	line:1
 point_size	../easyplot.py	/^point_size = 10$/;"	kind:variable	line:12
-reset_edge_colors	../socnet.py	/^def reset_edge_colors(g):$/;"	kind:function	line:222
-reset_node_colors	../socnet.py	/^def reset_node_colors(g):$/;"	kind:function	line:217
-reset_positions	../socnet.py	/^def reset_positions(g):$/;"	kind:function	line:227
+randomize_positions	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def randomize_positions(g):$/;"	kind:function	line:404
+randomize_positions	../old_socnet.py	/^def randomize_positions(g):$/;"	kind:function	line:404
+randomize_positions	../socnet.py	/^def randomize_positions(g):$/;"	kind:function	line:404
+reset_edge_colors	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def reset_edge_colors(g):$/;"	kind:function	line:230
+reset_edge_colors	../old_socnet.py	/^def reset_edge_colors(g):$/;"	kind:function	line:230
+reset_edge_colors	../socnet.py	/^def reset_edge_colors(g):$/;"	kind:function	line:230
+reset_node_colors	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def reset_node_colors(g):$/;"	kind:function	line:225
+reset_node_colors	../old_socnet.py	/^def reset_node_colors(g):$/;"	kind:function	line:225
+reset_node_colors	../socnet.py	/^def reset_node_colors(g):$/;"	kind:function	line:225
+reset_positions	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def reset_positions(g, weight_string):$/;"	kind:function	line:235
+reset_positions	../old_socnet.py	/^def reset_positions(g):$/;"	kind:function	line:235
+reset_positions	../socnet.py	/^def reset_positions(g):$/;"	kind:function	line:235
 save_successors	../encontro03/get-facebook.py	/^def save_successors(node, successors):$/;"	kind:function	line:58
 save_successors	../encontro03/get-github.py	/^def save_successors(user, successors):$/;"	kind:function	line:11
 save_successors	../encontro03/get-linkedin.py	/^def save_successors(node, successors):$/;"	kind:function	line:56
@@ -117,7 +183,15 @@ scrape_nodes	../encontro03/get-facebook.py	/^def scrape_nodes(browser):$/;"	kind
 scrape_nodes	../encontro03/get-goodreads.py	/^def scrape_nodes(browser, limit=None):$/;"	kind:function	line:26
 scrape_nodes	../encontro03/get-linkedin.py	/^def scrape_nodes(browser, selector):$/;"	kind:function	line:24
 show_animation	../easyplot.py	/^def show_animation(frames, xrange=None, yrange=None):$/;"	kind:function	line:161
-show_animation	../socnet.py	/^def show_animation(frames):$/;"	kind:function	line:322
-show_graph	../socnet.py	/^def show_graph(g, nlab=False, elab=False):$/;"	kind:function	line:255
+show_animation	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def show_animation(frames):$/;"	kind:function	line:327
+show_animation	../old_socnet.py	/^def show_animation(frames):$/;"	kind:function	line:327
+show_animation	../socnet.py	/^def show_animation(frames):$/;"	kind:function	line:327
+show_graph	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def show_graph(g, nlab=False, elab=False):$/;"	kind:function	line:260
+show_graph	../old_socnet.py	/^def show_graph(g, nlab=False, elab=False):$/;"	kind:function	line:260
+show_graph	../socnet.py	/^def show_graph(g, nlab=False, elab=False):$/;"	kind:function	line:260
+socnet.py	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	1;"	kind:file	line:1
 socnet.py	../socnet.py	1;"	kind:file	line:1
+update_positions	../escrita5/MisoginiaGamers_RedesSociais/socnet.py	/^def update_positions(g, weight=None):$/;"	kind:function	line:434
+update_positions	../old_socnet.py	/^def update_positions(g, weight=None):$/;"	kind:function	line:422
+update_positions	../socnet.py	/^def update_positions(g, weight=None):$/;"	kind:function	line:434
 vector_width	../easyplot.py	/^vector_width = 1$/;"	kind:variable	line:13

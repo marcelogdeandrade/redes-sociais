@@ -419,6 +419,18 @@ def generate_complete_graph(number_of_nodes):
     return g
 
 
+def generate_empty_graph(number_of_nodes):
+    g = networkx.empty_graph(number_of_nodes)
+
+    reset_node_colors(g)
+    reset_edge_colors(g)
+
+    randomize_positions(g)
+
+    return g
+
+
+
 def update_positions(g, weight=None):
     pos = {n: g.nodes[n]['pos'] for n in g.nodes}
 
