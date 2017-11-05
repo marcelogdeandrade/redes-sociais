@@ -290,7 +290,8 @@ def show_graph(g, nlab=False, elab=False):
         'layout': _build_layout(graph_width, graph_height),
     }
 
-    plotly.offline.iplot(figure, config={'displayModeBar': False}, show_link=False)
+    plotly.offline.iplot(
+        figure, config={'displayModeBar': False}, show_link=False)
 
 
 def generate_frame(g, nlab=False, elab=False):
@@ -374,11 +375,19 @@ def show_animation(frames):
         'frames': frames,
     }
 
-    plotly.offline.iplot(figure, config={'displayModeBar': False}, show_link=False)
+    plotly.offline.iplot(
+        figure, config={'displayModeBar': False}, show_link=False)
 
 
 def build_matrix(g):
     return networkx.to_numpy_matrix(g)
+
+
+def build_closeness(g):
+    closeness = networkx.closeness_centrality(g)
+
+    for n in closeness:
+        g.nodes[n]['theoretical_closeness'] = closeness[n]
 
 
 def build_betweenness(g):
@@ -397,7 +406,8 @@ def build_shortest_paths(g, s, t):
             g.nodes[path[i]]['shortest_neighbors'].add(path[i + 1])
 
     for n in g.nodes:
-        g.nodes[n]['shortest_neighbors'] = list(g.nodes[n]['shortest_neighbors'])
+        g.nodes[n]['shortest_neighbors'] = list(
+            g.nodes[n]['shortest_neighbors'])
         g.nodes[n]['shortest_neighbors'].sort()
 
 
@@ -408,8 +418,18 @@ def randomize_positions(g):
         g.nodes[n]['pos'] = (x, y)
 
 
-def generate_complete_graph(number_of_nodes):
-    g = networkx.complete_graph(number_of_nodes)
+def generate_empty_graph(num_nodes):
+    g = networkx.empty_graph(num_nodes)
+
+    reset_node_colors(g)
+
+    randomize_positions(g)
+
+    return g
+
+
+def generate_complete_graph(num_nodes):
+    g = networkx.complete_graph(num_nodes)
 
     reset_node_colors(g)
     reset_edge_colors(g)
@@ -417,18 +437,6 @@ def generate_complete_graph(number_of_nodes):
     randomize_positions(g)
 
     return g
-
-
-def generate_empty_graph(number_of_nodes):
-    g = networkx.empty_graph(number_of_nodes)
-
-    reset_node_colors(g)
-    reset_edge_colors(g)
-
-    randomize_positions(g)
-
-    return g
-
 
 
 def update_positions(g, weight=None):
@@ -437,6 +445,43 @@ def update_positions(g, weight=None):
     layout = networkx.spring_layout(g, pos=pos, iterations=1, weight=weight)
 
     _set_layout(g, layout)
+
+
+def average_distance(g):
+    return networkx.algorithms.shortest_paths.generic.average_shortest_path_length(g)
+
+
+def clustering_coefficient(g):
+    num_nodes = g.number_of_nodes()
+
+    nodes = list(g.nodes)
+
+    num_connected_triplets = 0
+
+    num_closed_triplets = 0
+
+    for i in range(num_nodes):
+        n = nodes[i]
+
+        for j in range(i + 1, num_nodes):
+            m = nodes[j]
+
+            for k in range(j + 1, num_nodes):
+                l = nodes[k]
+
+                num_edges = int(g.has_edge(n, m))
+                num_edges += int(g.has_edge(n, l))
+                num_edges += int(g.has_edge(m, l))
+
+                if(num_edges > 1):
+                    num_connected_triplets += 1
+
+                    if(num_edges > 2):
+                        num_connected_triplets += 2
+
+                        num_closed_triplets += 3
+
+    return num_closed_triplets / num_connected_triplets
 
 
 plotly.offline.init_notebook_mode(connected=True)
